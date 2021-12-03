@@ -86,7 +86,7 @@ menu {
   align-items: center;
 }
 
-.image_wrapper_2 {
+.image_wrapper {
   padding: 15px;
   align-items: center;
 }
@@ -159,10 +159,7 @@ menu {
   .header, 
   .image_wrapper_title, 
   .name,
-  .intro_wrapper, 
-  .about-words, 
-  .about-image-wrapper,
-  .footer {
+  .intro_wrapper {
   padding: 5px 15px;
   }
 
