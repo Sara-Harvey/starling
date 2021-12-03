@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" />
+        <title>Sara Harvey starling</title>
+    </head>
+    <body>
+      <div class="flex-container">
+
+        <nav>
+            <menu><a href="page3.html">previous</a></menu>
+            <menu><a href="page5.html">next</a></menu>
+            <menu><a href="https://saraharvey.xyz/">Home</a></menu>
+        </nav>
+
+        <h1 class="header">Upstairs Neighbor page 4</h1>
+
+        <div class="content">
+          <div class="image_wrapper">
+            <img class="starling_4"
+              src="Starling-4-Harvey.png" 
+              height="auto"
+              width="100%"
+              alt="full comics page 2">
+            </img>
+          </div>
+        </div>
+
+        <div class="directions">
+          <div class="scroll-message">Scroll the panels:</div>
+          <div class="page-message"><a href="page5.html">Next page</a></div>
+        </div>
+
+        <div class="slideshow-container">
+          <a class="prev" onclick="plusSlides(-1)"> < </a>
+
+          <div class="mySlides-wrapper">
+
+            <div class="mySlides">
+              <img src="12-harvey.png" style="width:100%; height: auto">
+            </div>
+
+            <div class="mySlides">
+              <img src="13-harvey.png" style="width:100%; height: auto">
+            </div>
+
+            <div class="mySlides">
+              <img src="14-harvey.png" style="width:100%; height: auto">
+            </div>
+
+            <div class="mySlides">
+              <img src="15-harvey.png" style="width:100%; height: auto">
+            </div>
+
+            <div class="mySlides">
+              <img src="16-harvey.png" style="width:100%; height: auto">
+            </div>
+
+            <div class="mySlides">
+              <img src="17-harvey.png" style="width:100%; height: auto">
+            </div>
+          </div>
+
+          <a class="next" onclick="plusSlides(1)"> > </a>
+
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "flex"; 
+        }
+      </script>
+
+
+    </body>
+</html>
