@@ -1,1 +1,101 @@
-<h1>Hello world!</h1>
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" />
+        <title>Sara Harvey starling</title>
+    </head>
+    <body>
+      <div class="flex-container-2">
+
+        <nav>
+            <menu><a href="https://saraharvey.xyz/">previous page</a></menu>
+            <menu><a href="https://saraharvey.xyz/">Home</a></menu>
+            <!-- <menu><a href="about.html">Home -- page 1</a></menu> -->
+            <!-- <menu><a href="https://www.instagram.com/ambivalent_sun/" target="_blank">comics</a></menu> -->
+        </nav>
+
+        <h1 class="header2">Upstairs Neighbor page 2
+        </h1>
+
+        <div class="content">
+          <div class="image_wrapper_2">
+            <img class="starling_2"
+              src="Starling-2-Harvey.png" 
+              height="auto"
+              width="100%"
+              alt="full comics page 2">
+            </img>
+          </div>
+        </div>
+
+        <div class="directions">
+          <div class="scroll-message">Scroll the panels:</div>
+          <div class="page-message-2">Next page</div>
+        </div>
+
+        <div class="slideshow-container">
+          <a class="prev" onclick="plusSlides(-1)"> < </a>
+
+          <div class="mySlides-wrapper">
+            <div class="mySlides">
+              <img src="6-harvey.png" style="width:100%; height: auto">
+            </div>
+
+            <div class="mySlides">
+              <img src="7-harvey.png" style="width:100%; height: auto">
+            </div>
+
+            <div class="mySlides">
+              <img src="8-harvey.png" style="width:100%; height: auto">
+            </div>
+
+            <div class="mySlides">
+              <img src="9-harvey.png" style="width:100%; height: auto">
+            </div>
+
+            <div class="mySlides">
+              <img src="10-harvey.png" style="width:100%; height: auto">
+            </div>
+
+            <div class="mySlides">
+              <img src="11-harvey.png" style="width:100%; height: auto">
+            </div>
+          </div>
+
+          <a class="next" onclick="plusSlides(1)"> > </a>
+
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "flex"; 
+        }
+      </script>
+
+
+    </body>
+</html>
