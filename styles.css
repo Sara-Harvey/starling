@@ -132,25 +132,6 @@ menu {
   max-width: 600px;
 }
 
-
-/* about page */
-.about-flex-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.about-words {
-  padding: 35px 250px;
-  align-items: center;
-}
-
-.about-image-wrapper {
-  padding: 0px 250px 40px;
-  align-items: center;
-}
-
-
 @media (max-width: 800px) {
   .body {
     flex-direction: column;
