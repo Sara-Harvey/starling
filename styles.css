@@ -29,10 +29,6 @@ p {
   font-size: 1.1em;
 }
 
-a {
-  font-size: 1.5em;
-}
-
 a:link {
   text-decoration: none;
   color: black;
@@ -73,6 +69,10 @@ menu {
   color: black;
 }
 
+menu a {
+font-size: 1.5em;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@ menu {
   flex-direction: row;
   justify-content: space-between;
   font-family: Permanent Marker, sans-serif;
-  font-size: 3em;
+  font-size: 2.75em;
   padding: 0px 35px;
 }
 
