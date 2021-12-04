@@ -18,8 +18,9 @@ body {
 
 h1 {
   font-family: Permanent Marker, sans-serif;
-  font-size: 3.5em;
-  line-height: normal;
+  font-size: 3em;
+  line-height: 80%;
+  color: #A9A9A9;
   margin: 0;
   padding: 0;
 }
@@ -138,6 +139,10 @@ menu a {
     flex-direction: column;
   }
 
+  h1 {
+    font-size: 2.25em;
+  }
+  
   .header, 
   .image_wrapper_title, 
   .name,
@@ -155,6 +160,7 @@ menu a {
 
   .directions {
   font-size: 1.75em;
+  line-height: 80%;
   }
 
   .prev, .next {
